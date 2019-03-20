@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install -y python-pip python-dev build-essential
 
 RUN mkdir flask-app
-COPY flask-app.py /flask-app
+COPY flask_app.py /flask-app
 COPY requirements.txt /flask-app
 WORKDIR /flask-app
 
